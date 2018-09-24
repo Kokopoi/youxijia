@@ -1,8 +1,6 @@
 ## 欢迎来到游戏家
 
-You can use the [editor on GitHub](https://github.com/Kokopoi/youxijia/edit/master/index.md) to maintain and preview the content for your website in Markdown files.
-
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+这是一个待测试的版本，目前就命名为0.1版本，还有很多功能需要完善，希望大家可以支持一下。
 
 ### Markdown
 
