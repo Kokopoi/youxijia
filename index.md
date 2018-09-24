@@ -17,5 +17,5 @@
 
 ```
 
-更多精彩内容正在开发，敬请期待 [皮肤介绍视频第一期点这里](https://github.com/Kokopoi/youxijia/blob/master/huawei)
+更多精彩内容正在开发，敬请期待 [皮肤介绍视频第一期点这里](a href="huawei")
 
