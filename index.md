@@ -2,34 +2,20 @@
 
 这是一个待测试的版本，目前就命名为0.1版本，还有很多功能需要完善，希望大家可以支持一下。
 
-### Markdown
+### 游戏家
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+游戏家是什么呢，恩，我们想把他做成一个游戏的多方向综合平台，他可能包括但不限于以下几个方面
 
 ```markdown
-Syntax highlighted code block
+我们对他的设想是：
 
-# Header 1
-## Header 2
-### Header 3
+游戏新闻
+游戏指南
+游戏教学视频
+游戏皮肤介绍
+......
 
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
 ```
 
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
+更多精彩内容正在开发，敬请期待 [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
 
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/Kokopoi/youxijia/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
