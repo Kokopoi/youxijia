@@ -1,0 +1,482 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>华为网站</title>
+<script src="jquery-1.9.1.js"></script>
+<style>
+/*重置区*/
+body,dl,dd{margin:0;}
+ul{margin:0;padding:0;}
+li{list-style:none;}
+a{text-decoration:none; display:block;}
+input{outline:none; margin:0; padding:0; border:none;}
+.clearfix{clear:both;}
+
+
+/*顶部导航*/
+.bgys{ height:36px;background-color:#5d5d58;}
+.jzk{ width:1000px; margin:0 auto;}
+
+.nav1 li{float:left; padding:0 15px;}
+.nav1 a{font-family:"微软雅黑"; font-size:15px; color:#cccccc; line-height:35px; margin:1px 0;}
+.nav1 li:hover{background-color:white; }
+.nav1 a:hover{color:black;}
+
+/*第二部分*/
+.nav2{height:80px; background-color:#ffffff;}
+.jzk2{ width:1000px; margin:0 auto; position:relative;}
+.nav3{float:right;}
+.nav3 li{float:left; margin-right:10px; margin-top:34px;}
+.nav3 a{font-family:"微软雅黑"; font-size:14px; color:#333333;}
+.nav3 a:hover{color:#999;}
+.huawei{position:absolute; top:0; left:0;}
+
+
+
+/*第三部分*/
+.nav4{height:52px; background-color:#f7f7f7; border-top:1px solid #eeeeee; border-bottom:1px solid #e5e5e5;}
+.jz{width:1000px; margin:0 auto;}
+.hwsc{float:left; position:relative;}
+.hwsc li{float:left; padding:0 6px; }
+.nav4 a{font-family:"微软雅黑"; font-size:16px; color:#323232; line-height:52px; padding:0 6px;}
+.nav4 li:hover{background-color:white; border-radius:2%;}
+.q1{position:absolute; left:972px; top:16px;}
+
+
+/*第四部分大图*/
+input{margin:0;padding:0;border:none;outline:none;}
+.banner_box img{display:block;}
+.banner_box{width:1440px;margin:0 auto;position:relative;}
+.btn_box{position:absolute;bottom:30px;left:50%;margin-left:-60px; }
+.btn_box input{width:20px;height:20px;border-radius:50%;background-color:#868686;float:left;margin:0 5px;}
+.btn_box .current{background-color:white; }
+
+/*第五部分新闻*/
+.fixed{ background-color:white; padding-top:15px; }
+.aq{ width:1000px; margin:0 auto; height:60px;background-color:#f7f7f7;}
+
+
+.newsshow{ margin:0 auto; width:60%; height:60px;position:absolute; float:left; top:734px; left:320px; overflow: hidden;}
+
+.newslist{position:absolute; left:0; top:0; line-height:40px; }
+.newslist a{ color:#333333; line-height:60px; font-family:"微软雅黑"; font-size:15px;}
+
+/*第六部分，新年致辞*/
+.sixed{ width:1000px; height:370px; margin:15px auto; position:relative;}
+.left1{ margin-top:12px; margin-left:0; }
+.center1{ margin-left:338px; margin-top:-40px;}
+.right1{margin-left:680px; margin-top:-78px;}
+.sixed a{font-family:"微软雅黑"; font-size:13px; color:#333333;}
+.tp2{position:absolute; top:0; left:338px;}
+.tp1{margin-left:1px;}
+.tp3{position:absolute; top:0; left:676px;}
+.left1 a{font-family:"微软雅黑"; font-size:16px; color:#333333;}
+.sa{font-family:"微软雅黑"; font-size:16px; color:#333333;}
+
+
+
+/*第七部分，大图视频*/
+.seven{width:1000px; margin:0 auto; position:relative; padding-bottom:24px;}
+.anniu{position:absolute; top:50%; left:50%;}
+
+
+/*第八部分，三个图片*/
+.eight{ width:1000px; height:370px; margin:15px auto; position:relative; margin-bottom:26px;}
+.left4{ margin-top:14px; margin-left:0; }
+.center5{ margin-left:338px; margin-top:-60px;}
+.right6{margin-left:680px; margin-top:-60px;}
+.eight a{font-family:"微软雅黑"; font-size:13px; color:#333333;}
+.tp4{position:absolute; top:0; left:338px;}
+.tp5{margin-left:1px;}
+.tp6{position:absolute; top:0; left:676px;}
+.kk{font-family:"微软雅黑"; font-size:16px; color:#333333;}
+
+
+/*第九部分展会活动*/
+.dhz{height:256px; background-color:#f5f5f5;}
+.zhhd{font-family:"微软雅黑"; font-size:26px; color:#333333; margin-left:46%; margin-top:14px;}
+.nm{margin-top:20px;}
+.mn{ margin:16px auto; position:relative;}
+.o{ position:absolute; left:123px; top:2px;font-family:"微软雅黑"; font-size:13px; color:#333333; }
+.sibai{width:400px;float:left;}
+.nb{font-family:"微软雅黑"; font-size:17px; color:#333333;}
+.jz2{width:1000px; position:relative; height:256px; margin:0 auto;}
+.dk1{ width:400px;}
+.dk2{width:400px; height:256px;margin:-400px 400px;} 
+.dw{position:absolute; top:56px; left:336px;}	
+.dw1{position:absolute; top:20px; left:336px;font-family:"微软雅黑"; font-size:17px; color:#333333;}
+.dw2{position:absolute; top:58px; left:460px;font-family:"微软雅黑"; font-size:13px; color:#333333;}
+.dw3{position:absolute; top:20px; left:680px;font-family:"微软雅黑"; font-size:17px; color:#333333;}
+.dw4{position:absolute; top:56px; left:680px;}
+.dw5{position:absolute; top:58px; left:800px;font-family:"微软雅黑"; font-size:13px; color:#333333;}
+
+/*最后一部分。*/
+.last1{height:400px; background-color:#272727;}
+.jz3{width:1000px; margin:0 auto; position:relative;}
+
+
+
+
+.mm2{margin-top:44px; font-family:"微软雅黑"; font-size:20px; color:#ffffff; float:left; margin-right:80px;}
+.mm2 dt{ margin-bottom:24px;}
+.mm2 a{ font-family:"微软雅黑"; font-size:16px; color:#ffffff; display:inline;}
+.mm2 a:hover{border-bottom:1px solid white;}
+.mm2 dd{padding-bottom:6px;}
+.dujinrui{position:absolute; top:0; left:680px;}
+.dujinrui2{position:absolute; top:100px; left:680px;}
+.dujinrui3{position:absolute; top:98px; left:726px;}
+.dujinrui4{position:absolute; top:98px; left:772px;}
+.dujinrui5{position:absolute; top:100px; left:818px;}
+.dujinrui6{position:absolute; top:98px; left:864px;}
+.dujinrui7{position:absolute; top:100px; left:910px;}
+.dujinrui8{position:absolute; top:150px; left:680px;}
+.dujinrui9 a{font-family:"微软雅黑"; font-size:19px; color:#ffffff; }
+.dujinrui9{position:absolute; top:250px; left:680px;}
+.dujinrui10{margin-top:40px; margin-left:-1px;}
+.op1{float:left; margin-left:680px; margin-top:-26px;}
+.op1 li{float:left;  }
+.op1 a{font-family:"微软雅黑"; font-size:13px; color:#ffffff; }
+.dujinrui9:hover{border-bottom:1px solid white;}
+.op1 a:hover{border-bottom:1px solid white;}
+
+
+body{position:relative;}
+
+.xinxi{position:fixed; right: 0; top:50%;}
+.xinfeng{position:fixed; right: 0; top:60%;}
+.dianhua{position: fixed; right:0; top:70%;}
+
+
+</style>
+</head>
+
+<body>
+
+<!--顶部导航-->
+<div class="bgys">
+	<div class="jzk">
+    <ul class="nav1">
+    <li><a href="">首页</a></li>
+    <li><a href="">个人与家庭用户</a></li>
+    <li><a href="">企业用户</a></li>
+    <li><a href="">运营商用户</a></li>
+    </ul>
+    <div class="clearfix"></div>
+    
+    </div>
+</div>
+
+<!--第二部分-->
+<div class="nav2">
+		<div class="jzk2">
+        <img class="huawei" src="img/huawei.png">
+       	<ul class="nav3">
+        	<li><a href="">选择区域/语言</a></li>
+            <li style="margin-top:36px;">丨</li>
+            <li><a href="">登录</a></li>
+            <li style="margin-top:36px;">丨</li>
+            <li ><a href="">注册</a></li>
+            <img style="margin-top:30px; margin-left:4px;" src="img/weixin.png">
+            <img style="margin-top:30px; margin-left:4px;" src="img/xinlangwudi.png">
+            <img style="margin-top:30px; margin-left:4px;" src="img/inwudi.png">
+        </ul>
+        <div class="clearfix"></div>
+        </div>
+</div>
+
+
+<!--第三部分-->
+<div class="nav4">
+	<div class="jz">
+    <ul class="hwsc">
+    	<li><a href="">我想...</a></li>
+        <li><a href="">行业洞察</a></li>
+        <li><a href="">解决方案</a></li>
+        <li><a href="">服务</a></li>
+        <li><a href="">产品</a></li>
+        <li><a href="">技术支持</a></li>
+        <li><a href="">开发者社区</a></li>
+        <li><a href="">华为商城</a></li>
+    <input type="search" style=" height:28px; width:180px; margin-top:12px; margin-left:182px;">
+      <img src="img/fdj.png"  class="q1">
+    </ul>
+    <div class="clearfix"></div>
+   
+    
+    </div>
+</div>
+
+
+<!--第四部分大图-->
+<div class="banner_box">
+    <img src="img/5gimg.png">
+    <img src="img/引领世界.png">
+    <img src="img/mus.png">
+
+    <div class="btn_box">
+        <input type="button" >
+        <input type="button">
+        <input type="button" >
+       
+    </div>
+</div>
+
+
+
+
+<script>
+var shunxu=0//声明变量记录位置数
+$(".btn_box input").eq(0).addClass("current")//让第1个按是当前项效果
+$(".banner_box img").hide().eq(0).show()//除了第1张图其他都隐藏
+$(".btn_box input").click(
+	function(){
+		shunxu = $(this).index()//得到当前按钮位置数赋值给变量shunxu
+		$(".banner_box img").hide().eq(shunxu).show()//图片都隐藏，只有和按钮位置一样的显示
+		$(".btn_box input").removeClass("current")//都不加当前项的效果
+		$(this).addClass("current")//只有点的这个按钮添加当前项的效果
+	}
+)
+
+</script>
+
+
+
+
+
+<!--第五部分新闻-->
+<div class="fixed">
+		<div class="aq">
+        <img src="img/新闻.png">
+        
+        
+        
+        <div class="newbox">
+	<div class="newsshow">
+    	<dl class="newslist">
+        <dd><a href="">华为桌面云：助力构建云化数字油田</a></dd>
+        <dd><a href="">桌面云解决方案可降低企业投资和运维成本，保障企业信息安全，方便员工移动办公。</a></dd>
+        <dd><a href="">全联接铁路：架起3.5亿吨能源新干线</a></dd>
+        <dd><a href="">华为eLTE新型宽带移动通信系统助神华朔黄铁路运能从2亿吨飞跃至3.5亿吨，年创造利润9亿美金。</a></dd>
+        <dd><a href="">全联接能源：构建高效企业数据仓库</a></dd>
+        <dd><a href="">中国石化构建基于华为服务器的EDW on HANA高效企业数据仓库，系统稳定可靠，性能显著提升</a></dd>
+        
+        
+        </dl>
+    
+    </div>
+	
+	<div class="clearfix"></div>
+</div>     
+        </div>
+</div>
+<script>
+function listmore(){
+
+$(".newslist").animate({top:-40},1000, function(){
+	$(".newslist").css("top",0)
+	$(".newslist dd:last").after($(".newslist dd:first"))
+	})}
+	
+	
+	
+
+
+
+
+
+
+var y = setInterval(listmore,2000)
+$(".newbox").mouseenter(
+	function(){
+		clearInterval(y)
+		}
+).mouseleave(
+	function(){
+		y =setInterval(listmore,2000)
+		}
+)
+
+
+
+</script>
+
+
+
+
+<!--第六部分新年致辞-->
+<div class="sixed">
+	<div class="tp1"><img src="img/致辞.png"></div>
+    <div class="tp2"><img src="img/演讲.png"></div>
+    <div class="tp3"><img src="img/xuni.png"></div>
+    
+    <div class="left1">
+    <a href="" class="cd">华为轮值CEO郭平新年致辞：把握方向，实现<br>大平台支撑精兵作战的变革</a>
+    </div>
+    
+    <div class="center1">
+    <a href=""><span class="sa">4K视频及云服务是超宽带的源动力</span><br>
+轮值CEO徐直军在华为全球超宽带高峰论坛上表示，<br>
+4k视频和云服务是UBB发展的驱动力。</a><br>
+    </div>
+    
+    <div class="right1">
+    <a href=""><span class="sa">《营赢》别册：虚拟与现实</span><br>
+以虚拟现实为代表的侵入式技术，将重新定义极致体<br>
+验，使更加美好的全联接世界触手可及。</a>
+    </div>
+</div>
+
+
+
+
+
+
+
+<!--第七部分大图视频-->
+<div class="seven">
+<img src="img/datu.png">
+<a href="video/Adobe.mp4" target="new";><input type="image" src="img/anniu.png" class="anniu"></a>
+</div>
+
+
+<!--第八部分，三个大图，文字-->
+<div class="eight">
+	<div class="tp4"><img src="img/xiao.png"></div>
+    <div class="tp5"><img src="img/shou.png"></div>
+    <div class="tp6"><img src="img/都是是.jpg"></div>
+    
+    <div class="left4">
+    <a href=""><span class="kk">全联接新西兰</span><br>
+广阔的森林和牧场为新西兰电信带来巨大挑战，而<br>
+700MHz让其消除数字鸿沟的梦想成为现实。</a>
+    </div>
+    
+    <div class="center5">
+    <a href=""><span class="kk">全联接球场</span><br>
+多特蒙德球场的无线WiFi覆盖，打造了一个前所未有<br>
+的智能场馆，实现8万球迷与世界轻松互联。</a>
+    </div>
+    
+    <div class="right6">
+    <a href=""><span class="kk">全联接电网</span><br>
+珠海智能电网的实现，既改善了电能消耗方式，又提<br>
+高了供电可靠性，甚至让智能家居称为现实。</a>
+    </div>
+</div>
+
+
+
+<!--第九部分展会活动-->
+<div class="dhz">
+	<div class="zhhd">展会活动</div>
+    
+    <div class="jz2">
+  <div class="dk1">
+  <div class="nm"><span class="nb">华为开发者大会2015</span></div>
+    <div class="mn"><img  src="img/魔术盒.png"><span class="o">在一起、创梦想<br>中国、深圳 10月19-20日</span></div></div>
+    
+    <div class="dw"><img src="img/2图.png"></div>
+    <div class="dw1">2015年ITU世界电信展及百老汇论坛</div>
+    <div class="dw2">加速ICT转型丰富数字生活<br>
+匈牙利、布达佩斯 10月13日</div>
+    <div class="dw3">2015华为云计算大会</div>
+    <div class="dw4"><img src="img/线图.png"></div>
+    <div class="dw5">精简IT，敏捷商道<br>
+中国上海、世博中心 9月18-19日</div>
+
+    
+    
+    </div>
+ 
+</div>
+
+
+<!--最后一部分-->
+<div class="last1">
+	<div class="jz3">
+    	<dl class="mm2">
+        	<dt>按访问者</dt>
+            <dd><a href="">个人用户</a></dd>
+            <dd><a href="">企业用户</a></dd>
+            <dd><a href="">运营商用户</a></dd>
+            <dd><a href="">新闻媒体</a></dd>
+            <dd><a href="">供应商</a></dd>
+            <dd><a href="">求职者</a></dd>
+      	</dl>
+        
+        <dl class="mm2">
+        	<dt>关于华为</dt>
+            <dd><a href="">公司简介</a></dd>
+            <dd><a href="">公司治理</a></dd>
+            <dd><a href="">高管信息</a></dd>
+            <dd><a href="">可持续发展</a></dd>
+            <dd><a href="">网络安全</a></dd>
+            <dd><a href="">出版物</a></dd>
+            <dd><a href="">公司年报</a></dd>
+      	</dl>
+        
+        
+         <dl class="mm2">
+        	<dt>新闻＆展会</dt>
+            <dd><a href="">新闻</a></dd>
+            <dd><a href="">媒体工具</a></dd>
+            <dd><a href="">媒体联系</a></dd>
+            <dd><a href="">安全通告</a></dd>
+            <dd><a href="">展会</a></dd>
+       
+      	</dl>
+        
+        
+         <dl class="mm2">
+        	<dt>快速链接</dt>
+            <dd><a href="">华为商城</a></dd>
+            <dd><a href="">成功故事</a></dd>
+            <dd><a href="">在线学习</a></dd>
+            <dd><a href="">华为海洋</a></dd>
+            <dd><a href="">心声社区</a></dd>
+            <dd><a href="">除名查询</a></dd>
+            <dd><a href="">在线反馈</a></dd>
+       
+      	</dl>
+
+     <img class="dujinrui" src="img/yingwen.png">
+     <a href=""><img  class="dujinrui2" src="img/xinlang2.png"></a>
+     <a href=""><img class="dujinrui3" src="img/in2.png"></a>
+     <a href=""><img class="dujinrui4" src="img/f2.png"></a>
+     <a href=""><img class="dujinrui5" src="img/bird2.png"></a>
+     <a href=""><img class="dujinrui6" src="img/youtube.png"></a>
+     <a href=""><img class="dujinrui7" src="img/G+.png"></a>
+     <a href=""><img class="dujinrui8" src="img/erweima.png"></a>
+    <div class="dujinrui9"><a href="">官方微信</a></div>
+    <img class="dujinrui10"  src="img/底部版权.png">
+   
+    
+    
+    
+    <ul class="op1">
+    <li style="border-right:1px solid white; padding:0 10px;"><a href="">法律声明</a></li>
+ 
+    <li style="border-right:1px solid white; padding:0 10px;"><a href="">隐私保护</a></li>
+   
+    <li style="border-right:1px solid white; padding:0 10px;"><a href="">联系我们</a></li>
+ 
+    <li style=" padding:0 10px;"><a href="">网站地图</a></li>
+     
+    </ul>
+    
+    </div>
+
+
+</div>
+
+
+
+<div class="dingwei">
+<a href=""><img src="img/xinxi2.png" class="xinxi"></a>
+<a href=""><img src="img/xinfeng2.png" class="xinfeng"></a>
+<a href=""><img src="img/dianhua2.png" class="dianhua"></a>
+</div>
+</body>
+</html>
+                 
